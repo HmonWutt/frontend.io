@@ -12,8 +12,8 @@
 //         referenceNode.parentNode.insertBefore(newNode, referenceNode.nextSibling);
 //     }
 // };
-import articles from "/src/assets/articles.js";
-import quotes from "/src/assets/quotes.js";
+import articles from "/assets/articles.js";
+import quotes from "/assets/quotes.js";
 
 window.onload = function () {
   ///////////////**************** change carousel images and quotes ****************/////////////
