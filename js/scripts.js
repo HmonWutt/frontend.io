@@ -83,11 +83,12 @@ window.onload = function () {
     const id = currentSlide.getAttribute("id");
     if (id != 0) {
       targetSlide = currentSlide.previousElementSibling;
+      changeQuote(id, -1);
     } else {
       targetSlide = slides[slides.length - 1];
+      changeQuote(slides.length, -1);
     }
     moveSlide(carousel, currentSlide, targetSlide);
-    changeQuote(id, -1);
   });
 
   /////////////////////***************** main page ******************///////////////////////
