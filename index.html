@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1 maximum-scale=1.0" />
+    <title>Brown rabbit test</title>
+    <link rel="stylesheet" href="css/main.css" type="text/css">
+</head>
+
+<body>
+    <div class="header">
+        <input class="nav-toggle" id="nav-toggle" type="checkbox"> </input>
+        <nav class="nav">
+
+            <ul class="menu">
+                <li><a href="">About us</a></li>
+                <li><a href="">Events</a></li>
+                <li><a href="">Nordic roaster</a></li>
+                <li><a href="">Results</a></li>
+                <li><a href="">Links</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+
+            <span class="social-media-icons">
+                <object class="icon" data="./assets/icons/linkedin-white.svg"></object>
+                <object class="icon" data="./assets/icons/twitter-white.svg" width="15" height="15"> </object>
+                <object class="icon" data="./assets/icons/instagram-white.svg" width="15" height="15"> </object>
+                <object class="icon" data="./assets/icons/facebook-white.svg" width="15" height="15"> </object>
+            </span>
+
+        </nav>
+        <label for="nav-toggle" class="burger" id="burger">
+            <span></span>
+        </label>
+        <input class="search-bar-toggle" id="search-bar-toggle" type="checkbox"> </input>
+        <div class="mobile-search-results-container">
+            <div class="mobile-search-icon-container">
+                <div class="mobile-search-icon">
+                    <object class="icon" data="./assets/icons/search.svg"></object>
+
+                </div>
+                <input type="search" class="search-box" id="mobile-search-box" placeholder="search">
+
+            </div>
+            <div class="mobile-search-icon-underline"></div>
+            <div class="mobile-search-results" mobile-search-results>
+                <template mobile-card-template>
+                    <div class="template-container" id="mobile-template-container">
+                        <img class="img" mobile-template-img />
+                        <h3 class="card-title" mobile-template-title>Title</h3>
+                        <span class="published-date" template-date></span>
+                        <p class="card-content" mobile-template-text></p>
+
+                    </div>
+
+                </template>
+                <div class="mobile-no-result">No result</div>
+
+            </div>
+
+        </div>
+        <div class="search-results-container">
+            <div class="search-results" search-results>
+                <template card-template>
+                    <div class="template-container">
+                        <img class="img" template-img />
+                        <h3 class="card-title" template-title>Title</h3>
+                        <span class="published-date" template-date></span>
+                        <p class="card-content" template-text></p>
+
+                    </div>
+
+                </template>
+                <div class="no-result">No result</div>
+
+            </div>
+
+
+        </div>
+        <label for="search-bar-toggle" class="magnifier" id="magnifier">
+            <img class="icon" src="./assets/icons/search.svg">
+        </label>
+    </div>
+    <div class="logo-wrapper">
+        <div><object class="logo" data="./assets/logo-white.svg"></object></div>
+        <div class="search-icon">
+            <label for="search-box"><img class="icon" src="./assets/icons/search.svg"></img></label>
+            <input type="search" class="search-box" id="full-screen-search-box" placeholder="search">
+            <div class="search-icon-underline"></div>
+        </div>
+    </div>
+
+    <div class="content">
+        <div class="carousel-float-box">
+            <div class="carousel-container">
+                <ul class="carousel">
+                </ul>
+                <button class="carousel-button" id="left"><img class="carousel-button-icon"
+                        src="./assets/icons/arrow-left.svg"></img></button>
+                <button class="carousel-button" id="right"><img class="carousel-button-icon" id="carousel-button-icon2"
+                        src="./assets/icons/arrow-left.svg"></img></button>
+
+            </div>
+            <div class="float-box">
+                <div class="float">
+
+                </div>
+            </div>
+        </div>
+
+        <dialog class="modal" id="modal">
+
+            <div id="modal-overlay">
+            </div>
+
+        </dialog>
+
+        <div class="panel-group">
+
+            <div class="panel">
+
+                <div id="article"></div>
+                <div class="pagination">
+                    <button class="other" id="previous">Previous</button>
+                    <div class="page-container">
+                        <span class="page">Page</span>
+                        <span class="current-page"></span>
+                        <span class="page">of</span>
+                        <span class="total-pages"></span>
+                    </div>
+                    <button class="other" id="next">Next</button>
+                </div>
+
+            </div>
+            <div class="panel">
+                <div class="announcement">
+                    <h2>WBC Shop</h2>
+                    <div>Your shopping cart is empty.</div>
+                    <button class="other">Visit the shop</button>
+
+                </div>
+                <div class="announcement">
+                    <h2>Next event</h2>
+                    <h3>World Barista Cup 2021</h3>
+                    <span>Copenhagen, Denmark</span>
+                    <span>Dates: 25th - 27th Auguse 2021</span>
+                    <span>Theme: SENSORY</span>
+                    <button class="other">Sign up now</button>
+                </div>
+                <div class="announcement">
+                    <h2>Scoreboard</h2>
+                    <h3>List of winners from last year</h3>
+                    <span>2021 - ?</span>
+                    <span>2021 - Denmark</span>
+                    <span>2021 - Sweden</span>
+                    <span>2021 - Turkey</span>
+                    <span>2021 - Italy</span>
+                    <span>2021 - Italy</span>
+                    <span>2021 - Germany</span>
+                </div>
+            </div>
+        </div>
+        <div class="sponsor-container">
+            <div class="sponsor-header">World Barista Cup Sponsors</div>
+            <div class="sponsor">
+            </div>
+            <div class="footer">
+                <div class="logo-media">
+
+                    <object class="footer-logo" data="./assets/logo-white.svg"></object>
+
+                    <span class="footer-social-media-icons">
+                        <object class="footer-icon" data="./assets/icons/linkedin-white.svg"></object>
+                        <object class="footer-icon" data="./assets/icons/twitter-white.svg" width="15" height="15">
+                        </object>
+                        <object class="footer-icon" data="./assets/icons/instagram-white.svg" width="15" height="15">
+                        </object>
+                        <object class="footer-icon" data="./assets/icons/facebook-white.svg" width="15" height="15">
+                        </object>
+                    </span>
+                </div>
+                <div class="info">
+                    <div class="about">
+                        <h3>About World Barista Cup</h3>
+                        <h4 id="vision">The vision within The World Barista Cup</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                            ut
+                            labore et dolore magna
+                            aliqua. Pulvinar neque laoreet suspendisse interdum consectetur libero id. Sed velit
+                            dignissim sodales ut eu sem
+                            integer.</p>
+                    </div>
+                    <div class="insta">
+                        <h3>Instagram Feed</h3>
+                        <div class="insta-img"></div>
+                    </div>
+                    <div class="contact">
+                        <h3>Contact</h3>
+                        <h4>World Barista Cup</h4>
+                        <h4>Amagertorg 13</h4>
+                        <h4>1120 Copenhagen K</h4>
+                        <h4>+45 0790551639</h4>
+                        <h4>CVR: 113473</h4>
+                        <h4>dummy_email@worldbaristacup.com</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="js/scripts.js" type="module"></script>
+
+</body>
+
+</html>
