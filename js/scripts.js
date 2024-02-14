@@ -215,7 +215,7 @@ window.onload = function () {
     const modal = document.querySelector("#modal");
     element.addEventListener("click", (e) => {
       const cross = document.createElement("img");
-      cross.src = "/src/assets/icons/close.svg";
+      cross.src = "./assets/icons/close.svg";
       cross.setAttribute("id", "cross");
       cross.addEventListener("click", () => {
         closeModal();
