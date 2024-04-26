@@ -1,3 +1,3 @@
-##Frontend Project I made for an internship application. 
+##Frontend Project
 
 https://hmonwutt.github.io/frontend.io/
