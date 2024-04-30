@@ -12,3 +12,5 @@ to stash
 another stash
 
 after stash
+
+after commit 
