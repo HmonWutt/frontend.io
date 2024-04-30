@@ -9,4 +9,6 @@ some edits to undo
 
 to stash
 
+another stash
+
 after stash
